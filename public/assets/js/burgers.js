@@ -2,11 +2,12 @@
 $(function() {
     $(".devourIt").on("click", function(event) {
       var id = $(this).attr("id");
-      console.log(id);
-  
+      
       var devouredStatus = {
-        devoured: true
-      };
+          devoured: true,
+      } 
+
+      console.log(devouredStatus);
   
       // Send the PUT request.
       $.ajax("/api/burgers/" + id, {

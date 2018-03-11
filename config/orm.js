@@ -38,7 +38,7 @@ var orm = {
 
         // Changing "devoured" key from False to True is the only required update
         connection.query(queryString, [{
-            "devoured": true
+            "devoured": true,
         }, {
             "id": id
         }], function (err, result) {
